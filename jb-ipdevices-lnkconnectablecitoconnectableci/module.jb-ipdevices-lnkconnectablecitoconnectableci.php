@@ -10,11 +10,11 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'jb-ipdevices-teemip/2.6.200409',
+	'jb-ipdevices-lnkconnectablecitoconnectableci/2.6.200409',
 	array(
 		// Identification
 		//
-		'label' => 'Datamodel: IP Devices - TeemIP enhancements',
+		'label' => 'Datamodel: IP Devices - lnkConnectableCIToConnectableCI',
 		'category' => 'business',
 
 		// Setup
@@ -22,17 +22,17 @@ SetupWebPage::AddModule(
 		'dependencies' => array(
 			'itop-config-mgmt/2.6.0',
 			'itop-endusers-devices/2.6.0',
-			'teemip-endusers-devices-adaptor/2.2.0', // @todo Verify if this is 2.4.0 already or higher and still compatible.
+			'jb-lnkconnectablecitoconnectableci/2.6.0', // @todo Verify if this is 2.4.0 already or higher and still compatible.
 			'jb-ipdevices-main/2.6.190110'
 		),
 		'mandatory' => false,
 		'visible' => true,
-		'auto_select' => 'SetupInfo::ModuleIsSelected("jb-ipdevices-main") && SetupInfo::ModuleIsSelected("teemip-ip-mgmt")',
+		'auto_select' => 'SetupInfo::ModuleIsSelected("jb-ipdevices-main") && SetupInfo::ModuleIsSelected("jb-lnkconnectablecitoconnectableci")',
 
 		// Components
 		//
 		'datamodel' => array(
-			'model.jb-ipdevices-teemip.php'
+			'model.jb-ipdevices-lnkconnectablecitoconnectableci.php'
 		),
 		'webservice' => array(
 			
@@ -56,3 +56,4 @@ SetupWebPage::AddModule(
 		),
 	)
 );
+

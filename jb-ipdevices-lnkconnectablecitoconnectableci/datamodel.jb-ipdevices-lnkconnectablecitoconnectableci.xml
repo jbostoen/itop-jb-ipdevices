@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
+	<!-- 
+		This extension requires jb-ipdevices. It makes the jb-ipdevices extension compatible with jb-lnkConnectableCIToConnectableCI
+	-->
+	<classes>
+		<class id="IPPhone" _delta="must_exist">
+			<fields>
+			  <field id="connectablecis_list" xsi:type="AttributeLinkedSetIndirect">
+				<linked_class _delta="redefine">lnkConnectableCIToConnectableCI</linked_class>
+				<ext_key_to_me _delta="redefine">device1_id</ext_key_to_me>
+				<ext_key_to_remote _delta="redefine">device2_id</ext_key_to_remote>
+			  </field>
+			</fields>
+		</class> 
+	</classes>  
+</itop_design>
+
