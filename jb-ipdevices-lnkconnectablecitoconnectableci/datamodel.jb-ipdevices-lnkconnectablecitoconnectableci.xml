@@ -6,11 +6,11 @@
 	<classes>
 		<class id="IPPhone" _delta="must_exist">
 			<fields>
-			  <field id="connectablecis_list" xsi:type="AttributeLinkedSetIndirect">
-				<linked_class _delta="redefine">lnkConnectableCIToConnectableCI</linked_class>
-				<ext_key_to_me _delta="redefine">device1_id</ext_key_to_me>
-				<ext_key_to_remote _delta="redefine">device2_id</ext_key_to_remote>
-			  </field>
+				<field id="connectablecis_list" xsi:type="AttributeLinkedSetIndirect">
+					<linked_class _delta="redefine">lnkConnectableCIToConnectableCI</linked_class>
+					<ext_key_to_me _delta="redefine">device1_id</ext_key_to_me>
+					<ext_key_to_remote _delta="redefine">device2_id</ext_key_to_remote>
+				</field>
 			</fields>
 		</class> 
 	</classes>  

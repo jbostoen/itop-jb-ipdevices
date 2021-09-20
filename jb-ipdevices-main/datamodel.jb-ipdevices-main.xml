@@ -71,17 +71,7 @@
 					<code><![CDATA[	public static function GetRelationQueries($sRelCode){return parent::GetRelationQueries($sRelCode);}]]></code>
 				</method>
 			</methods>
-			<relations>
-				<relation id="impacts">
-					<neighbours>
-						<neighbour id="connectableci_ipdevice">
-							<!-- leave the original linked class name here. -->
-							<query_down><![CDATA[SELECT ConnectableCI AS ci JOIN lnkConnectableCIToConnectableCI AS lnk ON lnk.device2_id = ci.id WHERE lnk.device2_id = :this->id AND lnk.connection_type='downlink']]></query_down>
-							<query_up><![CDATA[SELECT NetworkDevice AS ci JOIN lnkConnectableCIToConnectableCI AS lnk ON lnk.device1_id = ci.id WHERE lnk.device2_id = :this->id AND lnk.connection_type='uplink']]></query_up>
-						</neighbour>
-					</neighbours>
-				</relation>
-			</relations>
+			<relations/>
 			<presentation>
 				<details>
 					<items>

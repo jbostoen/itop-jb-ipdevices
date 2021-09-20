@@ -22,7 +22,7 @@ SetupWebPage::AddModule(
 		'dependencies' => array(
 			'itop-config-mgmt/2.6.0',
 			'itop-endusers-devices/2.6.0',
-			'jb-lnkconnectablecitoconnectableci/2.6.0', // @todo Verify if this is 2.4.0 already or higher and still compatible.
+			'jb-lnkconnectablecitoconnectableci/2.6.0',
 			'jb-ipdevices-main/2.6.190110'
 		),
 		'mandatory' => false,
